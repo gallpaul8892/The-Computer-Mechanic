@@ -4,7 +4,7 @@ const About = ()=>{
             About The Computer Mechanic
         </h1>
         <p>
-            Bla bla bla
+            Coming Soon...
         </p>
     </div>
 }
