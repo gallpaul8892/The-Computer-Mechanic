@@ -1,0 +1,12 @@
+@import "./App.scss";
+
+.services{
+    table,
+    th,
+    td {
+      text-align: left;
+      border: solid 2px $secondaryColor;
+      padding: 5px;
+      margin: 10px;
+    }
+}
