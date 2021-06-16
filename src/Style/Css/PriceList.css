@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+  min-height: 100vh;
+  background-image: url("../../background.jpg");
+  background-size: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.App .content {
+  color: lightgray;
+  background-color: black;
+  opacity: 90%;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.services table,
+.services th,
+.services td {
+  text-align: left;
+  border: solid 2px lightgray;
+  padding: 5px;
+  margin: 10px;
+}
