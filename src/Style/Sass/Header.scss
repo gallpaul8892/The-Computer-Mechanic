@@ -1,20 +1,10 @@
 @import "./App.scss";
 
 .App-header {
-  background-color: $primaryColor;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: $secondaryColor;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-
   .App-logo {
     height: 7vmin;
     pointer-events: none;
+    margin:10px;
 
     .left {
       margin-right: 30px;

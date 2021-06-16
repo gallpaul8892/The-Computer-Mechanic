@@ -15,19 +15,18 @@ const Home = () => {
           lifetime.
         </p>
         <p>
-          This is why The Computer Mechanic exists, to prolong the life of your
-          computer... and prevent a computer sized hole in your window.
+          Fortunately, with over 10 years experience in computer repair, The Computer Mechanic can help.
         </p>
         <p>
           We offer repairs, virus removal, data-safe reinstallation of operating
-          systems as well as many more services.
+          systems as well as many more services, we can even provide a small website.
         </p>
         <p>
-          Have a look at our <Link to="/services">Services &#38; Pricing</Link>{" "}
-          or try our new PC Service Wizard below for a tailored quote.
+          Try our new PC Service Wizard below for a tailored quote.
         </p>
+
+        <ServiceWizard />
       </div>
-      <ServiceWizard />
     </>
   );
 };

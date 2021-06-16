@@ -1,32 +1,12 @@
-$primaryColor: #282c34;
-$secondaryColor: lightgray;
+$headerColor: #1d1e1e;
+$primaryColor: #1d1e1e;
+$secondaryColor: black;
 $linkColor: white;
 
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: $secondaryColor;
-
-  menu {
-    background-color: $secondaryColor;
-    color: $primaryColor;
-    font-size: 30px;
-    margin: 0px;
-    padding: 10px;
-
-    .item {
-      margin: 20px;
-      padding: 20px;
-    }
-  }
-
-  body {
-    background-color: $primaryColor;
-    color: $secondaryColor;
-    border: solid 1px $primaryColor;
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-    padding: 40px;
-  }
+  background-color: lighten($secondaryColor,10%);
+  color:white;
+  font-size:large;
 }
