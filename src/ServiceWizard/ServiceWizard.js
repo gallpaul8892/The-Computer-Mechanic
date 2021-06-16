@@ -1,7 +1,6 @@
 import Modal from "react-modal";
 import { useState, useRef } from "react";
-import "../Css/ServiceWizard.css";
-import PriceList from "../PriceList";
+import "../Style/Css/ServiceWizard.css";
 
 const ServiceWizard = (props) => {
   let subtitle;

@@ -3,7 +3,7 @@ import Header from "./Header";
 import Menu from "./Menu";
 import About from "./About";
 import PriceList from "./PriceList";
-import "./Css/App.css";
+import "./Style/Css/App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

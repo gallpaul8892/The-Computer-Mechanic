@@ -1,6 +1,5 @@
-import "../Css/Home.css";
+import "../Style/Css/Home.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import ServiceWizard from "../ServiceWizard";
 
 const Home = () => {
