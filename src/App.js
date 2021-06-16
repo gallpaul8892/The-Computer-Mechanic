@@ -1,5 +1,5 @@
-import logo from "./spanner.svg";
 import Home from "./Home";
+import Header from "./Header";
 import Menu from "./Menu";
 import About from "./About";
 import PriceList from "./PriceList";
@@ -9,14 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo left" alt="logo" />
-        <div>
-          <h1>The Computer Mechanic</h1>
-          <h2>Glasgow</h2>
-        </div>
-        <img src={logo} className="App-logo right" alt="logo" />
-      </header>
+      <Header />
       <Router>
         <menu>
           <Menu />
