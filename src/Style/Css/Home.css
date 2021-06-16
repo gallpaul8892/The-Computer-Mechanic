@@ -1,29 +1,25 @@
 .App {
   text-align: center;
+  max-width: 750px;
+  margin: auto;
   min-height: 100vh;
-  background-color: lightgray;
+  background-image: url("../../background.jpg");
+  background-size: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.App menu {
-  background-color: lightgray;
-  color: #282c34;
-  font-size: 30px;
-  margin: 0px;
-  padding: 10px;
-}
-.App menu .item {
-  margin: 20px;
-  padding: 20px;
-}
-.App body {
-  background-color: #282c34;
+.App .content {
   color: lightgray;
-  border: solid 1px #282c34;
+  background-color: black;
+  opacity: 90%;
   text-align: center;
   margin: auto;
   font-size: 20px;
   padding: 40px;
 }
 
+.home {
+  background-color: black;
+}
 .home a {
   color: white;
 }

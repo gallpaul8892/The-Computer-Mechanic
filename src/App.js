@@ -11,10 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <Router>
-        <menu>
           <Menu />
-        </menu>
-        <body>
+        <div className="content">
           <Switch>
             <Route path="/about">
               <About />
@@ -26,7 +24,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
-        </body>
+        </div>
       </Router>
     </div>
   );
