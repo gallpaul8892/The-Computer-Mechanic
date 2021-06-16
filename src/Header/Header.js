@@ -1,27 +1,16 @@
-import { Grid } from "@material-ui/core";
 import logo from "../spanner.svg";
-import { Hidden } from "@material-ui/core";
 import "../Style/Css/Header.css";
 
 const Header = () => {
   return (
-    <Grid
-      container
-      className="App-header"
-      spacing={2}
-      direction="row"
-      justify="center"
-      alignItems="center"
-    >
-      <Grid item>
+    <header className="App-header">
+      <img src={logo} className="App-logo left" alt="logo" />
+      <div>
         <h1>The Computer Mechanic</h1>
-        <h3>73 Polnoon Avenue, Glasgow</h3>
-        <h3>07943572154</h3>
-      </Grid>
-      <Grid item sm={12}>
-        <img src={logo} className="App-logo" alt="logo" />
-      </Grid>
-    </Grid>
+        <h2>Glasgow</h2>
+      </div>
+      <img src={logo} className="App-logo right" alt="logo" />
+    </header>
   );
 };
 

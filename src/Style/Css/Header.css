@@ -1,15 +1,43 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: #1a1a1a;
-  color: white;
-  font-size: large;
+  background-color: lightgray;
+}
+.App menu {
+  background-color: lightgray;
+  color: #282c34;
+  font-size: 30px;
+  margin: 0px;
+  padding: 10px;
+}
+.App menu .item {
+  margin: 20px;
+  padding: 20px;
+}
+.App body {
+  background-color: #282c34;
+  color: lightgray;
+  border: solid 1px #282c34;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  padding: 40px;
 }
 
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: lightgray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
 .App-header .App-logo {
   height: 7vmin;
   pointer-events: none;
-  margin: 10px;
 }
 .App-header .App-logo .left {
   margin-right: 30px;

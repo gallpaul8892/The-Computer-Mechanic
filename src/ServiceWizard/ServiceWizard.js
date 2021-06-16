@@ -1,7 +1,6 @@
 import Modal from "react-modal";
 import { useState, useRef } from "react";
 import "../Style/Css/ServiceWizard.css";
-import Button from "@material-ui/core/Button";
 
 const ServiceWizard = (props) => {
   let subtitle;
@@ -69,7 +68,7 @@ const ServiceWizard = (props) => {
 
   return (
     <div className="service-wizard">
-      <Button variant="contained" color="primary" onClick={openModal} size="xlarge">PC Service Wizard</Button>
+      <button onClick={openModal}>PC Service Wizard</button>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}

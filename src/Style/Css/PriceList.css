@@ -23,3 +23,12 @@
   font-size: 20px;
   padding: 40px;
 }
+
+.services table,
+.services th,
+.services td {
+  text-align: left;
+  border: solid 2px lightgray;
+  padding: 5px;
+  margin: 10px;
+}
