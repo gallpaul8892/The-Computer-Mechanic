@@ -1,7 +1,7 @@
 .menu {
   font-size: 30px;
-  background-color: black;
-  opacity: 90%;
+  background-color: white;
+  opacity: 70%;
   padding: 10px;
 }
 .menu .item {
@@ -9,5 +9,5 @@
   padding: 20px;
 }
 .menu a {
-  color: lightblue;
+  color: black;
 }

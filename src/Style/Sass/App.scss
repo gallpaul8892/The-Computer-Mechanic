@@ -4,17 +4,17 @@ $linkColor: white;
 
 .App {
   text-align: center;
-  max-width: 750px;
   margin: auto;
   min-height: 100vh;
   background-image: url("../../background.jpg");
-  background-size: 100vh;
+  background-size: 200vh;
+  background-position-y: -230vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   .content {
     color: $secondaryColor;
     background-color: black;
-    opacity: 90%;
+    opacity: 85%;
     text-align: center;
     margin: auto;
     font-size: 20px;
