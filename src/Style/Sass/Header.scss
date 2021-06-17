@@ -1,14 +1,12 @@
 @import "./App.scss";
 
 .App-header {
-  min-height: 20vh;
   display: flex;
   flex-direction: row;
   background-color: black;
   opacity: 90%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: $secondaryColor;
 
   .App-logo {

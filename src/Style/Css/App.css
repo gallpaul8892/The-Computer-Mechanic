@@ -5,14 +5,14 @@
   background-image: url("../../background.jpg");
   background-size: 200vh;
   background-position-y: -230vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace;
+  font-size: 1.4em;
 }
 .App .content {
   color: lightgray;
   background-color: black;
-  opacity: 85%;
+  min-height: 80vh;
+  opacity: 87%;
   text-align: center;
   margin: auto;
-  font-size: 20px;
-  padding: 40px;
 }
