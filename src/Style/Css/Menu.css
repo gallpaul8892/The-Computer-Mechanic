@@ -1,13 +1,13 @@
 .menu {
   font-size: 30px;
-  background-color: black;
-  opacity: 90%;
-  padding: 10px;
+  background-color: white;
+  opacity: 80%;
+  padding: 20px;
 }
 .menu .item {
   margin: 20px;
   padding: 20px;
 }
 .menu a {
-  color: lightblue;
+  color: black;
 }

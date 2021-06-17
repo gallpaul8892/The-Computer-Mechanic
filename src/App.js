@@ -10,9 +10,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Router>
+      <div className="content">
+        <Router>
           <Menu />
-        <div className="content">
+
           <Switch>
             <Route path="/about">
               <About />
@@ -24,8 +25,8 @@ function App() {
               <Home />
             </Route>
           </Switch>
-        </div>
-      </Router>
+        </Router>
+      </div>
     </div>
   );
 }
