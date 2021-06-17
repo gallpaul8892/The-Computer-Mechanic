@@ -1,19 +1,27 @@
 import "../Style/Css/Menu.css";
 import { Link } from "react-router-dom";
+import Grid from "@material-ui/core/Grid";
 
 const Menu = () => {
   return (
-    <div className="menu">
-      <span className="item">
+    <Grid
+      className="menu"
+      container
+      direction="row"
+      spacing={2}
+      justify="center"
+      alignItems="center"
+    >
+      <Grid item>
         <Link to="/">Home</Link>
-      </span>
-      <span className="item">
+      </Grid>
+      <Grid item>
         <Link to="/about">About</Link>
-      </span>
-      <span className="item">
-        <Link to="/services">Services &#38; Pricing</Link>
-      </span>
-    </div>
+      </Grid>
+      <Grid item>
+        <Link to="/services">Pricing</Link>
+      </Grid>
+    </Grid>
   );
 };
 
