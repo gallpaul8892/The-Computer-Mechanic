@@ -1,1 +1,23 @@
-
+.service-wizard-modal {
+  background-color: black;
+  font-size: large;
+  margin: auto;
+  height: 50vh;
+  position: fixed;
+  height: 500px;
+  width: 300px;
+  opacity: 0.85;
+}
+.service-wizard-modal .service-wizard {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.service-wizard-modal .service-wizard .wizard-body {
+  background-color: #190550;
+  padding: 20px;
+  height: 350px;
+}
+.service-wizard-modal .service-wizard .wizard-body .cancel-btn {
+  margin-top: 20px;
+}
