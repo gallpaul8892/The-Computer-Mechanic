@@ -149,40 +149,6 @@ const Slower = (props) => {
   );
 };
 
-const Slower = (props) => {
-  const [value, setValue] = useState("Yes");
-
-  return (
-    <div>
-      <div>
-        <span>Is your PC slower than the day you bought it?</span>
-      </div>
-      <div>
-        <RadioGroup
-          aria-label="slow"
-          name="slow"
-          value={value}
-          onChange={(e) => {
-            setValue(e.target.value);
-            console.log(e.target.value);
-          }}
-        >
-          <FormControlLabel value="No" control={<Radio />} label="No" />
-          <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
-        </RadioGroup>
-      </div>
-      <div>
-        <Button color="secondary" variant="contained" onClick={props.prevStep}>
-          Previous
-        </Button>
-        <Button color="primary" variant="contained" onClick={props.nextStep}>
-          Next
-        </Button>
-      </div>
-    </div>
-  );
-};
-
 const Recommendation = () => {
   return <div></div>;
 };
