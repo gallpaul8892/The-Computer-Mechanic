@@ -2,13 +2,20 @@ $primaryColor: #282c34;
 $secondaryColor: lightgray;
 $linkColor: white;
 
-.App {
+.app {
   text-align: center;
   margin: auto;
   min-height: 100vh;
   background-image: url("../../background.jpg");
   background-size: 200vh;
   background-position-y: -230vh;
+  background-position-x: -95px;
+
+  @media (max-width: 962px) {
+    background-size: 104vh;
+    background-position-x: -95px;
+  }
+
   font-family: monospace;
   font-size: 1.4em;
 

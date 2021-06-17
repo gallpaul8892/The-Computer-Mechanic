@@ -2,11 +2,7 @@
   font-size: 30px;
   background-color: white;
   opacity: 0.8;
-  padding: 20px;
-}
-.menu .item {
-  margin: 20px;
-  padding: 20px;
+  padding: 10px 0px;
 }
 .menu a {
   color: black;
