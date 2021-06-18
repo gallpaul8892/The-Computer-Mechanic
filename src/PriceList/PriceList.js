@@ -1,61 +1,57 @@
 import "../Style/Css/PriceList.css";
 
 const PriceList = () => {
+  const services = [
+    {
+      title: "Full Reset",
+      description:
+        "Recommended for PCs that have became slow over time and have no personal pictures or videos to be kept.",
+      time: 24,
+      price: 25,
+    },
+    {
+      title: "Virus Removal",
+      description:
+        "Recommended if your PC has annoying popups when browsing the internet. Not as effective as a full reset and could take longer.",
+      time: 24,
+      price: 30,
+    },
+    {
+      title: "Hard Drive Upgrade",
+      description:
+        "Recommended if your PC or Laptop is still slow after a service, or if you are running out of disk space. Price excludes cost of new hard drive. Disk will be cloned so you will not notice any difference, except more space and better performance.",
+      time: 24,
+      price: 35,
+    },
+    {
+      title: "Keep Data (Extra)",
+      description:
+        "Add this option if your PC has data (pictures/videos) that you would like to keep.",
+      time: 24,
+      price: 15,
+    },
+    {
+      title: "Keep Applications (Extra)",
+      description:
+        "Add this option if your PC has applications that you would like to have reinstalled.",
+      time: 24,
+      price: 25,
+    },
+  ];
+
   return (
-    <div className="services">
+    <div className="price-list">
       <p>Collection and drop off available in Glasgow - £10 fixed fee</p>
-      <table>
-        <thead>
-          <th>Service</th>
-          <th>Description</th>
-          <th>Estimated Time (Up to)</th>
-          <th>Price</th>
-        </thead>
-        <tr>
-          <td>PC Reset</td>
-          <td>
-            Recommended for slow computers with no personal pictures or videos
-            needing kept.
-          </td>
-          <td>24 hours</td>
-          <td>£35</td>
-        </tr>
-        <tr>
-          <td>PC Reset (Data-Safe)</td>
-          <td>
-            Recommended for slow computers with personal files that need to be
-            kept.
-          </td>
-          <td>48 hours</td>
-          <td>£40</td>
-        </tr>
-        <tr>
-          <td>PC Clean (Data-Safe)</td>
-          <td>
-            Recommended for slow computers with personal files and applications
-            that need to be kept.
-          </td>
-          <td>48 hours</td>
-          <td>£50</td>
-        </tr>
-        <tr>
-          <td>Hard Drive Upgrade</td>
-          <td>
-            Recommended for computers that are running out of space too often
-          </td>
-          <td>24 hours</td>
-          <td>£40 + Price of new hard drive</td>
-        </tr>
-        <tr>
-          <td>Hard Drive Upgrade (Data-safe)</td>
-          <td>
-            Recommended for computers that are running out of space too often
-            but data and applications need to be kept
-          </td>
-          <td>48 hours</td>
-          <td>£50 + Cost of new hard drive, available on request</td>
-        </tr>
-      </table>
+      {services.map((service) => {
+        return (
+          <div class="service">
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+            <p>£{service.price}</p>
+            <p>Device will be needed for {service.time} hours</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
