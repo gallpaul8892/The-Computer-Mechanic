@@ -9,6 +9,10 @@
   justify-content: center;
   color: $secondaryColor;
 
+  a {
+    color: $linkColor;
+  }
+
   .App-logo {
     height: 7vmin;
     pointer-events: none;

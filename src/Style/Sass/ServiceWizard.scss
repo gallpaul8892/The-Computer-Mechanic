@@ -1,3 +1,8 @@
+.MuiButtonBase-root.MuiButton-containedPrimary {
+  margin-bottom: 50px;
+}
+
+
 .service-wizard-modal {
   background-color: black;
   font-size: large;
@@ -14,13 +19,13 @@
     text-align: center;
 
     .wizard-body {
-        background-color: rgb(25, 5, 80);
-        padding:20px;
-        height:350px;
+      background-color: rgb(25, 5, 80);
+      padding: 20px;
+      height: 350px;
 
-        .cancel-btn{
-            margin-top:20px;
-        }
+      .cancel-btn {
+        margin-top: 20px;
+      }
     }
   }
 }

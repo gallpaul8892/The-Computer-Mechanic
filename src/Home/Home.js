@@ -15,7 +15,7 @@ const Home = () => {
           lifetime.
         </p>
         <p>
-          This is why The Computer Mechanic exists, to prolong the life of your
+          This is why <Link to="/about">The Computer Mechanic</Link> exists, to prolong the life of your
           computer... and prevent a computer sized hole in your window.
         </p>
         <p>
@@ -23,11 +23,10 @@ const Home = () => {
           systems as well as many more services.
         </p>
         <p>
-          Have a look at our <Link to="/services">Services &#38; Pricing</Link>{" "}
-          or try our new PC Service Wizard below for a tailored quote.
+          Check out our <Link to="/services">Services</Link>{" "} to get started.
         </p>
       </div>
-      <ServiceWizard />
+      {/* <ServiceWizard /> */}
     </>
   );
 };

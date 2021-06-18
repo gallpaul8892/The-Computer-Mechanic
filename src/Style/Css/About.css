@@ -24,11 +24,11 @@
   margin: auto;
 }
 
-.home {
+.about {
   max-width: 1000px;
   margin: auto;
   padding: 40px;
 }
-.home a {
+.about a {
   color: lightblue;
 }
