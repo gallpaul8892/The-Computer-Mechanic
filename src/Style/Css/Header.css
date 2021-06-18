@@ -33,6 +33,9 @@
   justify-content: center;
   color: lightgray;
 }
+.App-header a {
+  color: lightblue;
+}
 .App-header .App-logo {
   height: 7vmin;
   pointer-events: none;

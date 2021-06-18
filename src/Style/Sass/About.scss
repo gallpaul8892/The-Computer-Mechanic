@@ -1,0 +1,10 @@
+@import "./App.scss";
+
+.about {
+  a {
+    color: $linkColor;
+  }
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+}
