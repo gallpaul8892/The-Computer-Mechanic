@@ -67,7 +67,7 @@ const ServiceWizard = (props) => {
 
   return (
     <>
-      <Button color="primary" variant="contained" onClick={openModal}>
+      <Button color="primary" variant="contained" onClick={openModal} className="service-wizard-btn">
         PC Service Wizard
       </Button>
       <Modal
