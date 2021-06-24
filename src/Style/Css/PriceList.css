@@ -7,7 +7,7 @@
   background-position-y: -230vh;
   background-position-x: -95px;
   font-family: monospace;
-  font-size: 1.4em;
+  font-size: large;
 }
 @media (max-width: 962px) {
   .app {
@@ -30,6 +30,7 @@
 .price-list .service {
   border: 4px solid white;
   margin-bottom: 30px;
+  padding: 10px;
 }
 .price-list .delivery-alert {
   justify-content: center;

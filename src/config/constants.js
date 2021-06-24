@@ -5,7 +5,7 @@ export const appConstants = {
     keepData: 10,
     keepApps: 15,
     hardDriveUpgrade: 30,
-    collectionFee:20
+    collectionFee:10
   },
   times:{
     fullReset: 24,

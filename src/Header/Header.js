@@ -7,7 +7,7 @@ const Header = () => {
       <div>
         <h1>The Computer Mechanic</h1>
         <h3>Glasgow and Surrounding Areas</h3>
-        <h3>
+        <p>
           <a href="mailto:computermech@gmail.com">
             computer.mech.gla@gmail.com
           </a>
@@ -16,7 +16,7 @@ const Header = () => {
             <br></br> <br></br>
           </Hidden>
           <a href="tel:07784393778">Tel: 07784393778</a>
-        </h3>
+        </p>
       </div>
     </header>
   );
