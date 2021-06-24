@@ -1,54 +1,63 @@
 import "../Style/Css/PriceList.css";
+import { appConstants } from "../config/constants.js";
+import Alert from "@material-ui/lab/Alert";
+import AlertTitle from "@material-ui/lab/AlertTitle";
 
 const PriceList = () => {
   const services = [
     {
+      id: "fullReset",
       title: "Full Reset",
       description:
         "Recommended for PCs that have became slow over time and have no personal pictures or videos to be kept.",
-      time: 24,
-      price: 25,
     },
     {
+      id: "virusRemoval",
       title: "Virus Removal",
       description:
         "Recommended if your PC has annoying popups when browsing the internet. Not as effective as a full reset and could take longer.",
-      time: 24,
-      price: 30,
     },
     {
+      id: "hardDriveUpgrade",
       title: "Hard Drive Upgrade",
       description:
         "Recommended if your PC or Laptop is still slow after a service, or if you are running out of disk space. Price excludes cost of new hard drive. Disk will be cloned so you will not notice any difference, except more space and better performance.",
-      time: 24,
-      price: 35,
     },
     {
+      id: "keepData",
       title: "Keep Data (Extra)",
       description:
         "Add this option if your PC has data (pictures/videos) that you would like to keep.",
-      time: 24,
-      price: 15,
+      option: true,
     },
     {
+      id: "keepApps",
       title: "Keep Applications (Extra)",
       description:
         "Add this option if your PC has applications that you would like to have reinstalled.",
-      time: 24,
-      price: 25,
+      option: true,
     },
   ];
 
   return (
     <div className="price-list">
-      <p>Collection and drop off available in Glasgow - £10 fixed fee</p>
+      <Alert severity="info" className="delivery-alert">
+        <AlertTitle>
+          <strong>Limited Collection and Drop Off Available for £10</strong>
+        </AlertTitle>
+      </Alert>
+
       {services.map((service) => {
         return (
           <div class="service">
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <p>£{service.price}</p>
-            <p>Device will be needed for {service.time} hours</p>
+            <h3>
+              <strong>{service.title}</strong>
+            </h3>
+            <h4>{service.description}</h4>
+            <h3>£{appConstants.prices[service.id]}</h3>
+            <h4>
+              Device will be needed for {appConstants.times[service.id]} hours
+            </h4>
           </div>
         );
       })}

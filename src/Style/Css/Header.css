@@ -32,6 +32,8 @@
   align-items: center;
   justify-content: center;
   color: lightgray;
+  word-break: break-word;
+  padding: 0 5px;
 }
 .App-header a {
   color: lightblue;
