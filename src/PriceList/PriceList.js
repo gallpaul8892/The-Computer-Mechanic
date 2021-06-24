@@ -43,7 +43,7 @@ const PriceList = () => {
     <div className="price-list">
       <Alert severity="info" className="delivery-alert">
         <AlertTitle>
-          <strong>Limited Collection and Drop Off Available for £10</strong>
+          <strong>Limited Collection and Drop Off Available for £{appConstants.prices.collectionFee}</strong>
         </AlertTitle>
       </Alert>
 
