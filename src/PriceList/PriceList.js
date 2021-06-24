@@ -1,6 +1,8 @@
 import "../Style/Css/PriceList.css";
 import { appConstants } from "../config/constants.js";
 import Alert from "@material-ui/lab/Alert";
+import AlertTitle from "@material-ui/lab/AlertTitle";
+
 const PriceList = () => {
   const services = [
     {
@@ -40,7 +42,9 @@ const PriceList = () => {
   return (
     <div className="price-list">
       <Alert severity="info" className="delivery-alert">
-        Collection and drop off available in Glasgow - £10 fixed fee
+        <AlertTitle>
+          <strong>Limited Collection and Drop Off Available for £10</strong>
+        </AlertTitle>
       </Alert>
 
       {services.map((service) => {
@@ -49,11 +53,11 @@ const PriceList = () => {
             <h3>
               <strong>{service.title}</strong>
             </h3>
-            <p>{service.description}</p>
-            <p>£{appConstants.prices[service.id]}</p>
-            <p>
+            <h4>{service.description}</h4>
+            <h3>£{appConstants.prices[service.id]}</h3>
+            <h4>
               Device will be needed for {appConstants.times[service.id]} hours
-            </p>
+            </h4>
           </div>
         );
       })}
