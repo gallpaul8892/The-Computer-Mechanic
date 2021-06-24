@@ -7,23 +7,22 @@ const Home = () => {
     <>
       <div className="home">
         <p>
-          Computers are like cars, they can be fast, small, big, but more
-          importantly, they can be slow or broken.
+          Computers are like cars, they can be fast, new and shiny - or old, slow
+          and frustrating.
         </p>
         <p>
-          Just like a car, a computer needs to be maintained to prolong its
+          And just like a car, a computer needs to be maintained to prolong its
           lifetime.
         </p>
         <p>
-          This is why <Link to="/about">The Computer Mechanic</Link> exists, to prolong the life of your
-          computer... and prevent a computer sized hole in your window.
+          Fortunately <Link to="/about">The Computer Mechanic</Link> is on hand to help
+          prolong the life of your computer.
         </p>
         <p>
-          We offer repairs, virus removal, data-safe reinstallation of operating
-          systems as well as many more services.
+          We offer full resets, virus removal, hard drive upgrade and much more.
         </p>
         <p>
-          Check out our <Link to="/services">Services</Link>{" "} to get started.
+          Check out our <Link to="/services">Services</Link> to get started.
         </p>
       </div>
       {/* <ServiceWizard /> */}

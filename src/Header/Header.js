@@ -1,4 +1,5 @@
 import "../Style/Css/Header.css";
+import Hidden from "@material-ui/core/Hidden";
 
 const Header = () => {
   return (
@@ -6,7 +7,16 @@ const Header = () => {
       <div>
         <h1>The Computer Mechanic</h1>
         <h3>Glasgow and Surrounding Areas</h3>
-        <h3><a href="mailto:computermech@gmail.com">computer.mech.gla@gmail.com</a> | <a href="tel:07943572154">07943572154</a></h3>
+        <h3>
+          <a href="mailto:computermech@gmail.com">
+            computer.mech.gla@gmail.com
+          </a>
+          <Hidden smDown> | </Hidden>
+          <Hidden mdUp>
+            <br></br> <br></br>
+          </Hidden>
+          <a href="tel:07784393778">Tel: 07784393778</a>
+        </h3>
       </div>
     </header>
   );
