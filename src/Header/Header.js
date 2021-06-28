@@ -1,21 +1,25 @@
 import "../Style/Css/Header.css";
+import {
+  telephoneNumber,
+  emailAddress,
+  title,
+  tagLine,
+} from "../config/appData";
 import Hidden from "@material-ui/core/Hidden";
 
 const Header = () => {
   return (
     <header className="App-header">
       <div>
-        <h1>The Computer Mechanic</h1>
-        <h3>Glasgow and Surrounding Areas</h3>
+        <h1>{title}</h1>
+        <h3>{tagLine}</h3>
         <p>
-          <a href="mailto:computermech@gmail.com">
-            computer.mech.gla@gmail.com
-          </a>
+          <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
           <Hidden smDown> | </Hidden>
           <Hidden mdUp>
             <br></br> <br></br>
           </Hidden>
-          <a href="tel:07784393778">Tel: 07784393778</a>
+          <a href={`tel:${telephoneNumber}`}>Tel: {telephoneNumber}</a>
         </p>
       </div>
     </header>

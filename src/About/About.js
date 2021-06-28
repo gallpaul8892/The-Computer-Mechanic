@@ -1,4 +1,5 @@
 import "../Style/Css/About.css";
+import { telephoneNumber, emailAddress } from "../config/appData";
 
 import { Link } from "react-router-dom";
 
@@ -23,10 +24,10 @@ const About = () => {
       </p>
       <p>
         There are many things that you can do to increase the lifespan of a
-        device, get in touch by{" "}
-        <a href="mailto:computermech@gmail.com">email</a>, or{" "}
-        <a href="tel:07784393778">phone</a> if you want some advice, or view our{" "}
-        <Link to="/services">Services</Link> and get your device booked in.
+        device, get in touch by <a href={`mailto:${emailAddress}`}>email</a>, or{" "}
+        <a href={`tel:${telephoneNumber}`}>phone</a> if you want some advice, or
+        view our <Link to="/services">Services</Link> and get your device booked
+        in.
       </p>
     </div>
   );
