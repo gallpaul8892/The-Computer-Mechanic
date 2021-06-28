@@ -3,7 +3,7 @@ export const appConstants = {
     consultancy: 10,
     fullReset: 30,
     virusRemoval: 50,
-    hardDriveUpgrade: 30,
+    hardDriveUpgrade: 50,
     collectionFee:10,
   },
   times:{
