@@ -1,11 +1,20 @@
-import "../Style/Css/About.css";
 import { telephoneNumber, emailAddress } from "../config/appData";
 
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const AboutWrapper = styled.div`
+  a {
+    color: $linkColor;
+  }
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+`;
 
 const About = () => {
   return (
-    <div className="about">
+    <AboutWrapper>
       <p>
         With over 9 years experience in PC repairs, we are IT Professionals who
         want to help people get the most out of their aging laptops and
@@ -29,7 +38,7 @@ const About = () => {
         view our <Link to="/services">Services</Link> and get your device booked
         in.
       </p>
-    </div>
+    </AboutWrapper>
   );
 };
 

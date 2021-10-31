@@ -1,9 +1,17 @@
-import "../Style/Css/PriceCard.css";
 import { serviceLevelWording } from "../config/appData";
+import styled from "styled-components";
+
+const PriceCardWrapper = styled.div`
+  border: 4px solid white;
+  margin-bottom: 30px;
+  padding: 10px;
+`;
+
 const PriceCard = (props) => {
   const { service } = props;
   return (
-    <div className="service">
+    <PriceCardWrapper>
+      {" "}
       <h3>
         <strong>{service.title}</strong>
       </h3>
@@ -16,10 +24,9 @@ const PriceCard = (props) => {
           ))}
         </div>
       )}
-
       {service.price && <h3>£{service.price}</h3>}
       {service.time && <p>{serviceLevelWording(service.time)}</p>}
-    </div>
+    </PriceCardWrapper>
   );
 };
 
