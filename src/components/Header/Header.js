@@ -6,9 +6,12 @@ const HeaderWrapper = styled.div`
   font-weight: lighter;
   padding-bottom: 20px;
   img {
-    height: 500px;
-    margin-bottom: -100px;
-    margin-top: -80px;
+    height: 300px;
+    @media (min-width: 500px) {
+      height: 500px;
+      margin-bottom: -100px;
+      margin-top: -80px;
+    }
   }
 `;
 
