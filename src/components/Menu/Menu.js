@@ -3,13 +3,15 @@ import Grid from "@material-ui/core/Grid";
 import styled from "styled-components";
 
 const MenuWrapper = styled.div`
-  font-size: xx-large;
+  font-size: x-large;
   background-color: white;
-  opacity: 0.8;
-  padding: 10px 0px;
+  padding: 5px 0px;
+  background-color: #c8dae2;
 
   a {
-    color: black;
+    font-weight: lighter;
+    color: #3c6475;
+    text-decoration: none;
   }
 `;
 
@@ -30,7 +32,7 @@ const Menu = () => {
           <Link to="/about">About</Link>
         </Grid>
         <Grid item>
-          <Link to="/services">Pricing</Link>
+          <Link to="/services">Services</Link>
         </Grid>
       </Grid>
     </MenuWrapper>

@@ -1,15 +1,18 @@
-import { telephoneNumber, emailAddress } from "../config/appData";
+import { telephoneNumber, emailAddress } from "../../config/appData";
 
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const AboutWrapper = styled.div`
-  a {
-    color: $linkColor;
-  }
   max-width: 1000px;
   margin: auto;
+  margin-top: -60px;
+  margin-bottom: -40px;
   padding: 40px;
+
+  a {
+    color: #3c6475;
+    font-weight: bolder;
+  }
 `;
 
 const About = () => {
@@ -35,8 +38,7 @@ const About = () => {
         There are many things that you can do to increase the lifespan of a
         device, get in touch by <a href={`mailto:${emailAddress}`}>email</a>, or{" "}
         <a href={`tel:${telephoneNumber}`}>phone</a> if you want some advice, or
-        view our <Link to="/services">Services</Link> and get your device booked
-        in.
+        view our Services and get your device booked in.
       </p>
     </AboutWrapper>
   );

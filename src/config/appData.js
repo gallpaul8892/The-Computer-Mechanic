@@ -11,30 +11,29 @@ const services = [
     description:
       "If you we spend time looking at your device and make a recommendation that you do not wish to proceed with, we will request a £10 fee to cover our time.",
     price: 10,
-    benefits: ["Save money on a new PC by exploring your options"],
+  },
+  {
+    id: "recovery",
+    title: "Data Recovery",
+    description:
+      "Lost you work? Don't fret, The Computer Mechanic is on hand to recover your data.",
+    price: 50,
   },
   {
     id: "fullReset",
     title: "Data-Safe Reset",
     description:
-      "Recommended for PCs that have became slow over time. Data will be safe but applications will need to be reinstalled by owner.",
+      "Device running slower than it was on day one? Reset your PC and keep your personal data.",
     price: 30,
     time: 24,
-    benefits: [
-      "Remove all applications",
-      "Laptop will run like new",
-      "Remove Viruses",
-      "Keep Data",
-    ],
   },
   {
     id: "virusRemoval",
     title: "Data & Application Safe Virus Removal",
     description:
-      "Recommended if your PC has been infected with a virus, including popups whilst browsing. Applications and Data will be retained, if applications are not essential then you should opt for the Data-Safe Reset.",
+      "Viruses are dangerous and could lead to your data being stole, fortunately The Computer Mechanic is the cure.",
     price: 50,
     time: 48,
-    benefits: ["Remove Viruses", "Keep Data", "Keep Applications"],
   },
   {
     id: "hardDriveUpgrade",
@@ -43,13 +42,6 @@ const services = [
       "Recommended if your PC or Laptop is still slow after a service, or if you are running out of disk space. Price excludes cost of new hard drive. Application and Data will be retained.",
     price: 50,
     time: 48,
-    benefits: [
-      "Upto 10x faster start up times",
-      "Games & Apps load faster",
-      "More space",
-      "Longer lasting",
-      "Less power consumption",
-    ],
   },
   {
     id: "other",
