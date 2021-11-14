@@ -5,11 +5,14 @@ import styled from "styled-components";
 const PriceListWrapper = styled.div``;
 
 const Cards = styled.div`
-  padding: 20px;
   display: grid;
   justify-content: center;
   grid-column-gap: 20px;
   grid-template-columns: repeat(auto-fill, 200px);
+
+  h2 {
+    text-decoration: underline;
+  }
 `;
 
 const PriceList = () => {

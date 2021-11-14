@@ -4,9 +4,10 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   font-weight: lighter;
-  padding-bottom: 20px;
   img {
     height: 300px;
+    margin-bottom: -60px;
+    margin-top: -50px;
     @media (min-width: 500px) {
       height: 500px;
       margin-bottom: -100px;
@@ -17,13 +18,13 @@ const HeaderWrapper = styled.div`
 
 const ContactSection = styled.div`
   background-color: #3c6475;
-  padding: 5px;
-  padding-bottom: 20px;
+  padding: 20px;
 
   a {
+    font-size: 1.4rem;
     color: white;
     display: block;
-    margin-top: 5px;
+    padding-bottom: 10px;
   }
 `;
 

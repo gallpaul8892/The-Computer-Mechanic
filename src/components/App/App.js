@@ -6,7 +6,6 @@ import styled from "styled-components";
 const AppWrapper = styled.div`
   display: grid;
   grid-column: auto;
-  min-width: 100px;
   text-align: center;
   color: #3c6475;
   justify-content: center;

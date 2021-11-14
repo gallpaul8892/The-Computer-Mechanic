@@ -5,10 +5,6 @@ import styled from "styled-components";
 const AboutWrapper = styled.div`
   max-width: 1000px;
   margin: auto;
-  margin-top: -60px;
-  margin-bottom: -40px;
-  padding: 40px;
-
   a {
     color: #3c6475;
     font-weight: bolder;
