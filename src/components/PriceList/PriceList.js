@@ -1,11 +1,14 @@
-import { services } from "../../config/appData.js";
+import services from "../..//config/services.json";
 import PriceCard from "../PriceCard/PriceCard";
 import styled from "styled-components";
 
-const PriceListWrapper = styled.div``;
+const PriceListWrapper = styled.div`
+  margin: 50px;
+  border: 10px solid;
+  padding: 0 30px;
+`;
 
 const Cards = styled.div`
-  padding: 20px;
   display: grid;
   justify-content: center;
   grid-column-gap: 20px;
