@@ -3,8 +3,6 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   font-weight: lighter;
-  position: sticky;
-  top: 0%;
   width: 100%;
   background: white;
 
@@ -44,6 +42,10 @@ const ContactSection = styled.div`
   @media (max-width: 480px) {
     a {
       display: block;
+    }
+
+    .email {
+      margin-bottom: 20px;
     }
   }
 `;
