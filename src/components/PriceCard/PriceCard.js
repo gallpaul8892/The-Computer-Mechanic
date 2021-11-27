@@ -25,9 +25,10 @@ const PriceCardWrapper = styled.div`
   }
 
   img {
-    max-width: 195px;
-    min-width: 100px;
+    width: 100%;
     background: black;
+    height: 150px;
+    object-fit: cover;
   }
 `;
 
