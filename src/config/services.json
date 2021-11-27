@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Gadget Help",
+    "description": "We can come to you and help set up printers, phones, smart televisions, tablets and other gadgets",
+    "price": 15,
+    "hourly": true,
+    "image": "gadgets.jpg"
+  },
+  {
+    "title": "Data Recovery",
+    "description": "Lost you work? Don't fret, The Computer Mechanic is on hand to recover your data.",
+    "price": 40,
+    "image": "data.jpg"
+  },
+  {
+    "title": "Virus Removal",
+    "description": "A virus can be unsafe as well as annoying, don't let hackers access your data, let us be the cure",
+    "price": 50,
+    "image": "privacy.jpg"
+  },
+  {
+    "title": "PC Upgrade",
+    "image": "upgrade-1.JPG",
+    "description": "If your PC is aging we can give it a new lease of life by upgrading to newer components like our recommended <a target=\"_blank\" href=\"https://www.amazon.co.uk/Crucial-MX500-CT500MX500SSD1-NAND-Internal/dp/B0786QNS9B/ref=sr_1_2_sspa?keywords=512%2Bssd&qid=1637186426&sr=8-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRUVIQzY1NElBTlVDJmVuY3J5cHRlZElkPUEwNjA5NTEyWU82SklRVksyRTQwJmVuY3J5cHRlZEFkSWQ9QTA5OTM0NzE2NVdXUTZXWlVUNzEmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1\">hard drive</a> or <a href=\"https://www.amazon.co.uk/Corsair-CMK16GX4M2B3200C16-Vengeance-Performance-Desktop/dp/B0143UM4TC/ref=sr_1_4?crid=PN9S82GVUD4A&keywords=16gb%2Bddr4%2Bram&qid=1637187201&qsid=257-9331924-1696505&sprefix=16gb%2Bddr%2Caps%2C177&sr=8-4&sres=B07D1XCKWW%2CB0143UM4TC%2CB07B2Y1N8B%2CB0123ZC44Y%2CB083TRRT16%2CB07TB3R9JB%2CB08C4VKYFG%2CB082414XGV%2CB08C51FMP6%2CB083VMSY1B%2CB088T2KNZ4%2CB0846JQ83S%2CB0846JXS5N%2CB08K2L9XXW%2CB07ZPLM1R1%2CB07N3Z1RP8&srpt=INTERNAL_MEMORY&th=1\" target=_blank>memory</a>",
+    "price": "40 + Cost of component"
+  },
+  {
+    "title": "Other Services",
+    "description": "If your problem is not covered above, get in touch using the details at the top of the page.",
+    "image": "other.jpg"
+  },
+  { "id": "collection", "price": 10 }
+]

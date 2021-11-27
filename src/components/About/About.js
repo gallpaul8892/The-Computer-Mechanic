@@ -4,7 +4,10 @@ import styled from "styled-components";
 
 const AboutWrapper = styled.div`
   max-width: 1000px;
-  margin: auto;
+  margin: 50px;
+  place-self: center;
+
+  border: 10px solid;
   a {
     color: #3c6475;
     font-weight: bolder;
@@ -14,6 +17,7 @@ const AboutWrapper = styled.div`
 const About = () => {
   return (
     <AboutWrapper>
+      <h2>Why trust us?</h2>
       <p>
         With over 9 years experience in PC repairs, we are IT Professionals who
         want to help people get the most out of their aging laptops and

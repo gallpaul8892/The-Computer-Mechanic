@@ -1,40 +1,70 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
-import Logo from ".././../images/logo_transparent.png";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   font-weight: lighter;
+  width: 100%;
+  background: white;
+
   img {
-    height: 300px;
-    margin-bottom: -60px;
-    margin-top: -50px;
+    height: 200px;
     @media (min-width: 500px) {
-      height: 500px;
-      margin-bottom: -100px;
-      margin-top: -80px;
+      height: 300px;
     }
   }
 `;
 
 const ContactSection = styled.div`
-  background-color: #3c6475;
+  background-color: black;
   padding: 20px;
+  padding-bottom: 20px;
 
   a {
     font-size: 1.4rem;
     color: white;
-    display: block;
-    padding-bottom: 10px;
+    display: inline;
+    margin-top: 5px;
+    font-weight: lighter;
+    font-size: 1.7rem;
+  }
+
+  @media (min-width: 480px) {
+    .email {
+      float: inline-start;
+      margin-right: 20px;
+    }
+
+    .tel {
+      float: inline-end;
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    a {
+      display: block;
+    }
+
+    .email {
+      margin-bottom: 20px;
+    }
   }
 `;
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <img src={Logo} alt="the computer mechanic"></img>
+      <img
+        src={`${process.env.PUBLIC_URL}/logo.jpg`}
+        alt="the computer mechanic"
+      ></img>
       <ContactSection>
-        <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
-        <a href={`tel:${telephoneNumber}`}>Tel: {telephoneNumber}</a>
+        <a href={`mailto:${emailAddress}`} className="email">
+          {emailAddress}
+        </a>
+        <a href={`tel:${telephoneNumber}`} className="tel">
+          Tel: {telephoneNumber}
+        </a>
       </ContactSection>
     </HeaderWrapper>
   );
