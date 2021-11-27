@@ -10,11 +10,28 @@ const PriceListWrapper = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  grid-column-gap: 20px;
-  grid-template-columns: repeat(auto-fill, 200px);
-
+  grid-gap: 20px;
+  grid-template-columns: 200px;
+  place-content: center;
+  justify-items: center;
   h2 {
     text-decoration: underline;
+  }
+
+  @media (min-width: 400px) {
+    grid-template-columns: 300px;
+  }
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  @media (min-width: 1600px) {
+    grid-template-columns: repeat(4, 300px);
   }
 `;
 

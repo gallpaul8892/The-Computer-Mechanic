@@ -16,6 +16,12 @@ const AppWrapper = styled.div`
   img {
     max-width: 100%;
   }
+
+  .max-height {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
 `;
 
 function App() {
@@ -23,9 +29,17 @@ function App() {
     <ThemeProvider theme={AppTheme}>
       <AppWrapper>
         <Header />
-        <img src={`${process.env.PUBLIC_URL}/laptop.jpg`} alt="laptop" />
+        <img
+          className="max-height"
+          src={`${process.env.PUBLIC_URL}/laptop.jpg`}
+          alt="laptop"
+        />
         <About />
-        <img src={`${process.env.PUBLIC_URL}/repair.jpg`} alt="laptop" />
+        <img
+          className="max-height"
+          src={`${process.env.PUBLIC_URL}/repair.jpg`}
+          alt="laptop"
+        />
         <PriceList />
       </AppWrapper>
     </ThemeProvider>
