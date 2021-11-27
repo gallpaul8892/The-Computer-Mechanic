@@ -1,10 +1,10 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
-import styled, { useTheme } from "styled-components";
+import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   font-weight: lighter;
   width: 100%;
-  background: white;
+  background: ${(props) => props.theme.backgroundColor};
 
   img {
     height: 200px;
@@ -56,7 +56,6 @@ const ContactSection = styled.div`
 `;
 
 const Header = () => {
-  const theme = useTheme();
   return (
     <HeaderWrapper>
       <img

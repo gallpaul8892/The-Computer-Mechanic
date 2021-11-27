@@ -25,9 +25,22 @@
     "price": "40 + Cost of component"
   },
   {
+    "title": "Smart Home Consultancy",
+    "description": "Looking to modernize your home? The Computer Mechanic knows his Z-Wave from his Zigbee and is on hand to help you choose the right products to help you move forward.",
+    "price": 15,
+    "hourly": true,
+    "image": "ai.jpg"
+  },
+  {
+    "title": "Tech Coaching",
+    "description": "If you feel technology is moving faster much faster than you, we can  help you get back on track.",
+    "price": 20,
+    "hourly": true,
+    "image": "coaching.jpg"
+  },
+  {
     "title": "Other Services",
     "description": "If your problem is not covered above, get in touch using the details at the top of the page.",
     "image": "other.jpg"
-  },
-  { "id": "collection", "price": 10 }
+  }
 ]

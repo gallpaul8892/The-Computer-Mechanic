@@ -1,4 +1,3 @@
-import { serviceLevelWording } from "../../config/appData";
 import styled from "styled-components";
 
 const PriceCardWrapper = styled.div`
@@ -21,7 +20,8 @@ const PriceCardWrapper = styled.div`
   .content {
     padding: 5px;
     padding-bottom: 20px;
-    height: auto;
+    height: 150px;
+    overflow-y: auto;
   }
 
   img {
@@ -35,6 +35,7 @@ const PriceCardWrapper = styled.div`
 const Price = styled.div`
   color: ${(props) => props.theme.priceColor};
   vertical-align: bottom;
+  margin-bottom: 10px;
 `;
 
 const PriceCard = (props) => {
@@ -51,14 +52,9 @@ const PriceCard = (props) => {
       </div>
       <div className="content">
         <p dangerouslySetInnerHTML={{ __html: service.description }} />
-        {service.benefits && service.benefits.length > 0 && (
-          <div>
-            <h3>Benefits</h3>
-            {service.benefits.map((benefit) => (
-              <div>- {benefit}</div>
-            ))}
-          </div>
-        )}
+      </div>
+      <div>
+        {" "}
         {service.price && (
           <Price>
             £{service.price}
