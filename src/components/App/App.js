@@ -2,6 +2,8 @@ import Header from "../Header";
 import About from "../About";
 import PriceList from "../PriceList";
 import styled, { ThemeProvider } from "styled-components";
+import image1 from "../../images/landing-image-1.jpg";
+import image2 from "../../images/landing-image-2.jpg";
 import AppTheme from "../../AppTheme";
 
 const AppWrapper = styled.div`
@@ -29,17 +31,9 @@ function App() {
     <ThemeProvider theme={AppTheme}>
       <AppWrapper>
         <Header />
-        <img
-          className="max-height"
-          src={`${process.env.PUBLIC_URL}/laptop.jpg`}
-          alt="laptop"
-        />
+        <img className="max-height" src={image1} alt="laptop" />
         <About />
-        <img
-          className="max-height"
-          src={`${process.env.PUBLIC_URL}/repair.jpg`}
-          alt="laptop"
-        />
+        <img className="max-height" src={image2} alt="laptop" />
         <PriceList />
       </AppWrapper>
     </ThemeProvider>
