@@ -1,5 +1,5 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 
 const HeaderWrapper = styled.div`
   font-weight: lighter;
@@ -15,13 +15,17 @@ const HeaderWrapper = styled.div`
 `;
 
 const ContactSection = styled.div`
-  background-color: black;
+  background-color: ${(props) => props.theme.accentColor};
   padding: 20px;
   padding-bottom: 20px;
 
+  img {
+    height: 100%;
+  }
+
   a {
     font-size: 1.4rem;
-    color: white;
+    color: ${(props) => props.theme.backgroundColor};
     display: inline;
     margin-top: 5px;
     font-weight: lighter;
@@ -52,6 +56,7 @@ const ContactSection = styled.div`
 `;
 
 const Header = () => {
+  const theme = useTheme();
   return (
     <HeaderWrapper>
       <img

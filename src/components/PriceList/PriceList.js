@@ -10,7 +10,6 @@ const PriceListWrapper = styled.div`
 
 const Cards = styled.div`
   display: grid;
-  justify-content: center;
   grid-column-gap: 20px;
   grid-template-columns: repeat(auto-fill, 200px);
 

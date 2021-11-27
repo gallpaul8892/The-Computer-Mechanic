@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 const MenuWrapper = styled.div`
   font-size: x-large;
-  background-color: white;
+  background-color: ${(props) => props.theme.backgroundColor};
   padding: 5px 0px;
-  background-color: #c8dae2;
+  background-color: ${(props) => props.theme.priceColor};
 
   a {
     font-weight: lighter;
-    color: #3c6475;
+    color: ${(props) => props.theme.primaryColor};
     text-decoration: none;
   }
 `;

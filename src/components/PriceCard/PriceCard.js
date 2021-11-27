@@ -6,15 +6,15 @@ const PriceCardWrapper = styled.div`
   margin-bottom: 30px;
   max-width: 300px;
   min-width: 200px;
-  border: 2px solid #3c6475;
+  border: 2px solid ${(props) => props.theme.primaryColor};
 
   .header {
-    background-color: #3c6475;
+    background-color: ${(props) => props.theme.primaryColor};
     padding: 1px;
     padding-bottom: 0;
   }
   h3 {
-    color: white;
+    color: ${(props) => props.theme.backgroundColor};
     font-weight: lighter;
   }
 
@@ -32,7 +32,7 @@ const PriceCardWrapper = styled.div`
 `;
 
 const Price = styled.div`
-  color: darkgreen;
+  color: ${(props) => props.theme.priceColor};
   vertical-align: bottom;
 `;
 

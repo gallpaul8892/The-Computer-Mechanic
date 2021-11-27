@@ -9,7 +9,7 @@ const AboutWrapper = styled.div`
 
   border: 10px solid;
   a {
-    color: #3c6475;
+    color: ${(props) => props.theme.primaryColor};
     font-weight: bolder;
   }
 `;
