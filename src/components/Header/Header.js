@@ -1,4 +1,5 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
+import Logo from "../../images/logo.jpg";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
@@ -58,10 +59,7 @@ const ContactSection = styled.div`
 const Header = () => {
   return (
     <HeaderWrapper>
-      <img
-        src={`${process.env.PUBLIC_URL}/logo.jpg`}
-        alt="the computer mechanic"
-      ></img>
+      <img src={Logo} alt="the computer mechanic"></img>
       <ContactSection>
         <a href={`mailto:${emailAddress}`} className="email">
           {emailAddress}
