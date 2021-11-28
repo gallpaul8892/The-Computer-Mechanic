@@ -4,7 +4,6 @@ import styled from "styled-components";
 
 const PriceListWrapper = styled.div`
   margin: 10px;
-  border: 10px solid;
   padding: 0 30px;
 `;
 
