@@ -2,7 +2,9 @@ import services from "../..//config/services.json";
 import PriceCard from "../PriceCard/PriceCard";
 import styled from "styled-components";
 
-const PriceListWrapper = styled.div``;
+const PriceListWrapper = styled.div`
+  margin-top: 10px;
+`;
 
 const Cards = styled.div`
   display: grid;

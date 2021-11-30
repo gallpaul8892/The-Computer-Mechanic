@@ -5,8 +5,7 @@ import styled from "styled-components";
 
 const AboutWrapper = styled.div`
   place-self: center;
-  margin: 20px 0;
-
+  margin-bottom: 10px;
   a {
     color: ${(props) => props.theme.primaryColor};
     font-weight: bolder;
