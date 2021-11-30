@@ -8,7 +8,7 @@ const Cards = styled.div`
   display: grid;
   grid-gap: 20px;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
   place-content: center;
   justify-items: center;
   h2 {

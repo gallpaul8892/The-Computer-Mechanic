@@ -1,4 +1,5 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
+import Paul from "../../images/paul.png";
 
 import styled from "styled-components";
 
@@ -10,33 +11,40 @@ const AboutWrapper = styled.div`
     color: ${(props) => props.theme.primaryColor};
     font-weight: bolder;
   }
+
+  img {
+    filter: grayscale(100);
+    height: 200px;
+  }
 `;
 
 const About = () => {
   return (
     <AboutWrapper>
       <h2>Why trust us?</h2>
+      <img src={Paul} alt="Paul from The Computer Mechanic"></img>
       <p>
-        With over 9 years experience in PC repairs, we are IT Professionals who
-        want to help people get the most out of their aging laptops and
-        computers.
+        Hello, I'm Paul, the Computer Mechanic and I've been tinkering with
+        computers for over 20 years. I've learned a lot in that time and really
+        grown my passion for laptops, phones and all gadgets, as well helping
+        people get the most out of their technology.
       </p>
       <p>
-        Firstly we're a business so naturallly we want to help our customers
-        save money by avoiding spending money on new devices that aren't
-        required.
+        One of the main benefits of helping people with their technology is that
+        I might be able to stop you buying something new, which means you won't
+        need to dispose of your old device, avoiding the negative environmental
+        impact.
       </p>
       <p>
-        Additionally, when you throw your device away there is an environmental
-        impact. As you can imagine 10s of millions of PCs and laptops are being
-        sold every year, by prolonging the lives of those devices, we can make a
-        small difference
+        I started the Computer Mechanic to try and formalize what I've been
+        doing on and off over the years and I can help with many of your
+        gadgets, phones, laptops, televisions, smart devices etc.
       </p>
       <p>
-        There are many things that you can do to increase the lifespan of a
-        device, get in touch by <a href={`mailto:${emailAddress}`}>email</a>, or{" "}
-        <a href={`tel:${telephoneNumber}`}>phone</a> if you want some advice, or
-        view our Services and get your device booked in.
+        If you want to know more about our services, reach us by{" "}
+        <a href={`mailto:${emailAddress}`}>email</a>, or{" "}
+        <a href={`tel:${telephoneNumber}`}>phone</a>, you can browse our
+        services below.
       </p>
     </AboutWrapper>
   );
