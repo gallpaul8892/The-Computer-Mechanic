@@ -20,6 +20,7 @@ const HeaderWrapper = styled.div`
 const ContactSection = styled.div`
   background-color: ${(props) => props.theme.accentColor};
   padding: 20px;
+  font-size: 1.2rem;
   padding-bottom: 20px;
   max-width: 100%;
 
