@@ -8,7 +8,7 @@
   },
   {
     "title": "Data Recovery",
-    "description": "Lost you work? Don't fret, The Computer Mechanic is on hand to recover your data.",
+    "description": "Lost your work? Don't fret, The Computer Mechanic is on hand to recover your data.",
     "price": 40,
     "image": "data.jpg"
   },
@@ -33,14 +33,14 @@
   },
   {
     "title": "Tech Coaching",
-    "description": "If you feel technology is moving faster much faster than you, we can  help you get back on track.",
+    "description": "If you feel technology is moving too fast, we can help you catch up.",
     "price": 20,
     "hourly": true,
     "image": "coaching.jpg"
   },
   {
     "title": "Other Services",
-    "description": "If your problem is not covered above, get in touch using the details at the top of the page.",
+    "description": "If your problem is not covered above, please get in touch using the details at the <a href=\"#contact-details\">top of the page</a>.",
     "image": "other.jpg",
     "price": "TBC"
   }

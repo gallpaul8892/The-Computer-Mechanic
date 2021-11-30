@@ -12,7 +12,7 @@ const HeaderWrapper = styled.div`
     height: 250px;
 
     @media (max-width: 400px) {
-      height: 150px;
+      height: 200px;
     }
   }
 `;
@@ -61,7 +61,7 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <img src={Logo} alt="the computer mechanic"></img>
-      <ContactSection>
+      <ContactSection id="contact-details">
         <a href={`mailto:${emailAddress}`} className="email">
           {emailAddress}
         </a>

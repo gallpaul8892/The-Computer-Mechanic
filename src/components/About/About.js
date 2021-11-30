@@ -24,7 +24,7 @@ const About = () => {
       <h2>About the Computer Mechanic</h2>
       <img src={Paul} alt="Paul from The Computer Mechanic"></img>
       <p>
-        Hello, I'm Paul, the Computer Mechanic and I've been tinkering with
+        Hello, I'm Paul from the Computer Mechanic and I've been tinkering with
         computers for over 20 years. From replacing computer components to
         removing viruses and building websites (including this one), I've
         covered many different areas and have a wide range of skills relating to
@@ -32,8 +32,8 @@ const About = () => {
       </p>
       <p>
         One of the main benefits of helping people with their technology is that
-        I reduce waste buy prolonging the life of your device, avoiding the
-        negative environmental impact.
+        I can help reduce waste by prolonging the life of their devices
+        ultimately avoiding the negative environmental impact.
       </p>
       <p>
         If you want to know more about our services, reach us by{" "}
