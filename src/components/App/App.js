@@ -37,7 +37,6 @@ function App() {
     <ThemeProvider theme={AppTheme}>
       <AppWrapper>
         <Header />
-        <img className="max-height" src={image1} alt="laptop" />
         <About />
         <img className="max-height" src={image2} alt="laptop" />
         <PriceList />

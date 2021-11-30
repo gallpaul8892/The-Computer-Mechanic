@@ -19,7 +19,7 @@ const Cards = styled.div`
 const PriceList = () => {
   return (
     <PriceListWrapper>
-      <h2>Our Services</h2>
+      <h2 id="services">Our Services</h2>
       <Cards>
         {services.map((service) => {
           return <>{service.title && <PriceCard service={service} />}</>;
