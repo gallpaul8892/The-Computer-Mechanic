@@ -13,7 +13,6 @@ const AppWrapper = styled.div`
   color: ${(props) => props.theme.primaryColor};
   justify-content: center;
   margin: auto;
-  font-size: 1.2rem;
 
   img {
     max-width: 100%;

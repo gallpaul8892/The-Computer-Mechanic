@@ -25,12 +25,10 @@ const ContactSection = styled.div`
   }
 
   a {
-    font-size: 1.4rem;
     color: ${(props) => props.theme.backgroundColor};
     display: inline;
     margin-top: 5px;
     font-weight: lighter;
-    font-size: 1.7rem;
   }
 
   @media (min-width: 480px) {
