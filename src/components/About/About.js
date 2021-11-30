@@ -3,10 +3,8 @@ import { telephoneNumber, emailAddress } from "../../config/appData";
 import styled from "styled-components";
 
 const AboutWrapper = styled.div`
-  margin: 50px;
   place-self: center;
 
-  border: 10px solid;
   a {
     color: ${(props) => props.theme.primaryColor};
     font-weight: bolder;

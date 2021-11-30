@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   font-weight: lighter;
-  width: 100%;
+  max-width: 100%;
+  word-break: break-all;
   background: ${(props) => props.theme.backgroundColor};
 
   img {
@@ -19,6 +20,7 @@ const ContactSection = styled.div`
   background-color: ${(props) => props.theme.accentColor};
   padding: 20px;
   padding-bottom: 20px;
+  max-width: 100%;
 
   img {
     height: 100%;

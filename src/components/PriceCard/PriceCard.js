@@ -4,6 +4,7 @@ const PriceCardWrapper = styled.div`
   width: 100%;
   place-self: center;
   text-align: center;
+  height: 100%;
   place-items: center;
 `;
 
