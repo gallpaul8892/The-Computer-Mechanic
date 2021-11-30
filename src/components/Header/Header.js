@@ -1,5 +1,5 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
-import Logo from "../../images/logo.jpg";
+import Logo from "../../images/logo.png";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
