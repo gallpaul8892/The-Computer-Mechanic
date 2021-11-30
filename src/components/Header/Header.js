@@ -10,7 +10,6 @@ const HeaderWrapper = styled.div`
 
   img {
     height: 250px;
-    width: 100%;
 
     @media (max-width: 400px) {
       height: 150px;
