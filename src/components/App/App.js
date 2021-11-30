@@ -8,6 +8,7 @@ import AppTheme from "../../AppTheme";
 
 const AppWrapper = styled.div`
   display: grid;
+  max-width: 1000px;
   grid-column: auto;
   text-align: center;
   color: ${(props) => props.theme.primaryColor};
@@ -19,14 +20,14 @@ const AppWrapper = styled.div`
   }
 
   .max-height {
-    height: 450px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
   }
 
   @media (max-width: 450px) {
     .max-height {
-      height: 250px;
+      height: 200px;
     }
   }
 `;

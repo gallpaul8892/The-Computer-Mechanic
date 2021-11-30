@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const AboutWrapper = styled.div`
   place-self: center;
+  margin: 20px 0;
 
   a {
     color: ${(props) => props.theme.primaryColor};

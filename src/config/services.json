@@ -41,6 +41,7 @@
   {
     "title": "Other Services",
     "description": "If your problem is not covered above, get in touch using the details at the top of the page.",
-    "image": "other.jpg"
+    "image": "other.jpg",
+    "price": "TBC"
   }
 ]

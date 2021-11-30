@@ -26,7 +26,7 @@ const PriceCardContent = styled.div`
 
   .content {
     padding-bottom: 20px;
-    height: 200px;
+    min-height: 150px;
     overflow-y: auto;
   }
 

@@ -9,9 +9,11 @@ const HeaderWrapper = styled.div`
   background: ${(props) => props.theme.backgroundColor};
 
   img {
-    height: 200px;
-    @media (min-width: 500px) {
-      height: 300px;
+    height: 250px;
+    width: 100px;
+
+    @media (max-width: 400px) {
+      height: 150px;
     }
   }
 `;
