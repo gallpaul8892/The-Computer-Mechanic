@@ -1,6 +1,7 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
 import Logo from "../../images/logo.png";
 import styled from "styled-components";
+import { gtag } from "ga-gtag";
 
 const HeaderWrapper = styled.div`
   font-weight: lighter;
@@ -63,10 +64,22 @@ const Header = () => {
     <HeaderWrapper>
       <img src={Logo} alt="the computer mechanic"></img>
       <ContactSection id="contact-details">
-        <a href={`mailto:${emailAddress}`} className="email">
+        <a
+          href={`mailto:${emailAddress}`}
+          className="email"
+          onClick={() => {
+            gtag("event", "mail clicked");
+          }}
+        >
           {emailAddress}
         </a>
-        <a href={`tel:${telephoneNumber}`} className="tel">
+        <a
+          href={`tel:${telephoneNumber}`}
+          className="tel"
+          onClick={() => {
+            gtag("event", "phone clicked");
+          }}
+        >
           Tel: {telephoneNumber}
         </a>
       </ContactSection>

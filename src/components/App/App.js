@@ -2,8 +2,8 @@ import Header from "../Header";
 import About from "../About";
 import PriceList from "../PriceList";
 import styled, { ThemeProvider } from "styled-components";
-import image1 from "../../images/landing-image-1.jpg";
-import image2 from "../../images/landing-image-2.jpg";
+import image from "../../images/landing-image-2.jpg";
+import gtag from "ga-gtag";
 import AppTheme from "../../AppTheme";
 
 const AppWrapper = styled.div`
@@ -38,7 +38,7 @@ function App() {
       <AppWrapper>
         <Header />
         <About />
-        <img className="max-height" src={image2} alt="laptop" />
+        <img className="max-height" src={image} alt="laptop" />
         <PriceList />
       </AppWrapper>
     </ThemeProvider>
