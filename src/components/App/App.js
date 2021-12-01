@@ -5,6 +5,7 @@ import styled, { ThemeProvider } from "styled-components";
 import image from "../../images/landing-image-2.jpg";
 import Logo from "../../images/logo.png";
 import AppTheme from "../../AppTheme";
+import { useState } from "react";
 
 const AppWrapper = styled.div`
   display: grid;
@@ -34,11 +35,13 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
   return (
     <ThemeProvider theme={AppTheme}>
       <AppWrapper>
         <img src={Logo} alt="the computer mechanic"></img>
-        <Contact />
+        <Contact setTheme={setTheme} theme={theme} />
         <About />
         <img className="max-height" src={image} alt="laptop" />
         <PriceList />
