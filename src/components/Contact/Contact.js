@@ -1,9 +1,11 @@
 import { telephoneNumber, emailAddress } from "../../config/appData";
-import Logo from "../../images/logo.png";
 import styled from "styled-components";
 import { gtag } from "ga-gtag";
 
 const HeaderWrapper = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   font-weight: lighter;
   max-width: 100%;
   word-break: break-all;
@@ -59,10 +61,9 @@ const ContactSection = styled.div`
   }
 `;
 
-const Header = () => {
+const Contact = () => {
   return (
     <HeaderWrapper>
-      <img src={Logo} alt="the computer mechanic"></img>
       <ContactSection id="contact-details">
         <a
           href={`mailto:${emailAddress}`}
@@ -87,4 +88,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Contact;

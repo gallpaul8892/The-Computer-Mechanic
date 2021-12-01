@@ -1,9 +1,9 @@
-import Header from "../Header";
+import Contact from "../Contact";
 import About from "../About";
 import PriceList from "../PriceList";
 import styled, { ThemeProvider } from "styled-components";
 import image from "../../images/landing-image-2.jpg";
-import gtag from "ga-gtag";
+import Logo from "../../images/logo.png";
 import AppTheme from "../../AppTheme";
 
 const AppWrapper = styled.div`
@@ -17,6 +17,7 @@ const AppWrapper = styled.div`
 
   img {
     max-width: 100%;
+    margin: auto;
   }
 
   .max-height {
@@ -36,7 +37,8 @@ function App() {
   return (
     <ThemeProvider theme={AppTheme}>
       <AppWrapper>
-        <Header />
+        <img src={Logo} alt="the computer mechanic"></img>
+        <Contact />
         <About />
         <img className="max-height" src={image} alt="laptop" />
         <PriceList />

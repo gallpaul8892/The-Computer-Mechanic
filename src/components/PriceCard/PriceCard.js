@@ -6,6 +6,10 @@ const PriceCardWrapper = styled.div`
   text-align: center;
   height: 100%;
   place-items: center;
+  a {
+    color: ${(props) => props.theme.primaryColor};
+    font-weight: bolder;
+  }
 `;
 
 const PriceCardContent = styled.div`
