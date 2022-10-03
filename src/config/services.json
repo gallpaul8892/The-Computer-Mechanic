@@ -2,20 +2,20 @@
   {
     "title": "Gadget Help",
     "description": "We can come to you and help set up printers, phones, smart televisions, tablets and other gadgets",
-    "price": 15,
+    "price": 20,
     "hourly": true,
     "image": "gadgets.jpg"
   },
   {
     "title": "Data Recovery",
     "description": "Lost your work? Don't fret, The Computer Mechanic is on hand to recover your data.",
-    "price": 40,
+    "price": 60,
     "image": "data.jpg"
   },
   {
     "title": "Virus Removal",
     "description": "A virus can be unsafe as well as annoying, don't let hackers access your data, let us be the cure",
-    "price": 50,
+    "price": 60,
     "image": "privacy.jpg"
   },
   {
@@ -27,7 +27,7 @@
   {
     "title": "Smart Home Consultancy",
     "description": "Looking to modernize your home? The Computer Mechanic knows his Z-Wave from his Zigbee and is on hand to help you choose the right products to help you move forward.",
-    "price": 15,
+    "price": 20,
     "hourly": true,
     "image": "ai.jpg"
   },
