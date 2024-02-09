@@ -21,7 +21,6 @@ const About = () => {
   return (
     <AboutWrapper>
       <h2>About the Computer Mechanic</h2>
-      <img src={Paul} alt="Paul from The Computer Mechanic"></img>
       <p>
         Hello, I'm Paul from the Computer Mechanic and I've been tinkering with
         computers for over 20 years. From replacing computer components to
